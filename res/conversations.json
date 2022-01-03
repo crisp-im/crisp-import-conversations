@@ -1,0 +1,57 @@
+[{
+  "user": {
+    "name": "John Doe",
+    "email": "john.doe@gmail.com",
+    "country": "US"
+  },
+  "messages": [
+    {
+      "text": "Message 1",
+      "date": 1577836800000,
+      "from": "user"
+    },
+    {
+      "text": "Message 2",
+      "date": 1577844000000,
+      "from": "operator"
+    },
+    {
+      "note": "This is a priate note",
+      "date": 1577844000000,
+      "from": "operator"
+    },
+    {
+      "text": "This is a reply",
+      "date": 1577847600000,
+      "from": "user"
+    }
+  ]
+}, {
+  "user": {
+    "name": "Jane Doe",
+    "email": "jane.doe@gmail.com",
+    "country": "UK"
+  },
+  "messages": [
+    {
+      "text": "Hello!",
+      "date": 1577836800000,
+      "from": "user"
+    },
+    {
+      "text": "Hello! How can I help?",
+      "date": 1577844000000,
+      "from": "operator"
+    },
+    {
+      "note": "Hey @john, can you help with this?",
+      "date": 1577844000000,
+      "from": "operator"
+    },
+    {
+      "text": "Hey!",
+      "date": 1577847600000,
+      "from": "user"
+    }
+  ]
+}]

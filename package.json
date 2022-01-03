@@ -1,0 +1,12 @@
+{
+  "name": "crisp-import-conversations",
+  "version": "1.0.0",
+  "description": "Import conversatons from your previous provider",
+  "main": "index.js",
+  "author": "Crisp IM",
+  "license": "MIT",
+  "dependencies": {
+    "crisp-api": "5.0.2",
+    "stream-json": "^1.7.3"
+  }
+}
