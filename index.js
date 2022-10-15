@@ -3,8 +3,10 @@ var ImportLib = require("./lib/import");
 
 var Import = new ImportLib({
   websiteId: CONFIG.WEBSITE_ID,
-  identifier: CONFIG.API_IDENTIFIER,
-  key: CONFIG.API_KEY
+  urn: CONFIG.PLUGIN_URN,
+  name: CONFIG.PLUGIN_NAME,
+  identifier: CONFIG.PLUGIN_TOKEN_IDENTIFIER,
+  key: CONFIG.PLUGIN_TOKEN_KEY
 });
 
 Import.importFromFile("./res/conversations.json").then((result) => {

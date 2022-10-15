@@ -1,5 +1,7 @@
 {
   "WEBSITE_ID": "",
-  "API_IDENTIFIER": "",
-  "API_KEY": ""
+  "PLUGIN_URN": "",
+  "PLUGIN_NAME": "",
+  "PLUGIN_TOKEN_IDENTIFIER": "",
+  "PLUGIN_TOKEN_KEY": ""
 }
