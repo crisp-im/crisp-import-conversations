@@ -6,7 +6,7 @@
   "author": "Crisp IM",
   "license": "MIT",
   "dependencies": {
-    "crisp-api": "5.0.2",
-    "stream-json": "^1.7.3"
+    "crisp-api": "6.3.2",
+    "stream-json": "1.7.4"
   }
 }
