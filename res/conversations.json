@@ -30,8 +30,12 @@
   "user": {
     "name": "Jane Doe",
     "email": "jane.doe@gmail.com",
-    "country": "UK"
+    "phone": "+33707070707",
+    "country": "UK",
+    "locales": ["en", "fr"]
   },
+  "subject": "I need help",
+  "segments": ["customer", "recent"],
   "messages": [
     {
       "text": "Hello!",
