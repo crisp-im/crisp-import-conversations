@@ -4,8 +4,8 @@ Import all your conversations from your previous provider to Crisp. Wrapper arou
 
 Copyright 2021 Crisp IM SARL. See LICENSE for copying information.
 
-* **😘 Maintainers**: [@baptistejamin](https://github.com/baptistejamin)
 * **📝 Implements**: [node-crisp-api](https://github.com/crisp-im/node-crisp-api) at revision: 6.3.2
+* **😘 Maintainers**: [@baptistejamin](https://github.com/baptistejamin), [@eliottvincent](https://github.com/eliottvincent)
 
 ## Quickstart
 
