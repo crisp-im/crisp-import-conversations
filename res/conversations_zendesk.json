@@ -1,0 +1,108 @@
+[
+  {
+    "url": "https://acmesupport.zendesk.com/api/v2/tickets/5.json",
+    "id": 5,
+    "via": {
+      "channel": "email",
+      "source": {
+        "from": {
+          "address": "john.doe@gmail.com",
+          "name": "John Doe"
+        },
+        "to": {
+          "name": "Acme",
+          "address": "support@acme.com"
+        }
+      }
+    },
+    "subject": "I have an order issue",
+    "raw_subject": "I have an order issue",
+    "status": "closed",
+    "tags": [
+      "approved",
+      "order_issue"
+    ],
+    "requester": {
+      "id": 383488458353,
+      "name": "John Doe",
+      "email": "john.doe@gmail.com",
+      "time_zone": "Paris",
+      "iana_time_zone": "Europe/Paris",
+      "phone": null,
+      "photo": {
+        "content_url": "https://storage.crisp.chat/users/avatar/operator/aaee44b087f30800/p1000094_3le9ge.jpg"
+      },
+      "locale": "en-US"
+    },
+    "assignee": {
+      "id": 373483485834,
+      "name": "John Doe",
+      "email": "john@acme.com",
+      "time_zone": "Paris",
+      "iana_time_zone": "Europe/Paris",
+      "phone": null,
+      "photo": null,
+      "locale": "en-US"
+    },
+    "comments": [
+      {
+        "id": 603439493499,
+        "type": "Comment",
+        "author_id": 383488458353,
+        "body": "Hello, I need help",
+        "html_body": "<div class=\"zd-comment zd-comment-pre-styled\" dir=\"auto\"><div dir=\"ltr\">Hello, I need help</div></div>",
+        "ticket_id": 5,
+        "via": {
+          "channel": "email",
+          "source": {
+            "from": {
+              "address": "john.doe@gmail.com",
+              "name": "John Doe",
+              "original_recipients": [
+                "support@acme.com",
+                "john.doe@gmail.com"
+              ]
+            },
+            "to": {
+              "name": "Acme",
+              "address": "support@acme.com"
+            }
+          }
+        },
+        "metadata": {
+          "system": {
+            "message_id": "<CANGwdu6nHdXWgjKjcYXzeg9ReteT0=0Lm6C--YJzimGqaY6SZw@mail.gmail.com>",
+            "ip_address": "209.85.220.41",
+            "location": "United States",
+            "latitude": 37.751,
+            "longitude": -97.822
+          }
+        }
+      },
+      {
+        "id": 600804781759,
+        "type": "Comment",
+        "author_id": 373483485834,
+        "body": "Thank you for choosing Acme and reaching out to our Customer Support Team .\n\nHow can I help you?",
+        "html_body": "<div class=\"zd-comment\" dir=\"auto\">Thank you for choosing Acme and reaching out to our Customer Support Team .<br><br>nHow can I help you?</div>",
+        "ticket_id": 5,
+        "via": {
+          "channel": "web",
+          "source": {
+            "from": {},
+            "to": {}
+          }
+        },
+        "metadata": {
+          "system": {
+            "client": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 OPR/91.0.4516.77 X-Middleton/1",
+            "ip_address": "92.184.116.128",
+            "location": "Paris, Ile-de-France (FR)",
+            "latitude": 48.8584,
+            "longitude": 2.2945
+          }
+        }
+      }
+    ]
+  }
+]
