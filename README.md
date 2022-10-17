@@ -123,4 +123,4 @@ var Import = new CrispImport(
 ```
 Supported adapters are: `zendesk`.
 
-To write a new adapter, simply create a new file `/adapters` and take inspiration of the existing adapters.
+To write a new adapter, simply create a new file `/adapters` and take inspiration from the existing adapters.
