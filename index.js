@@ -1,7 +1,7 @@
 var CONFIG = require("./config");
-var ImportLib = require("./lib/import");
+var CrispImport = require("./lib/import");
 
-var Import = new ImportLib({
+var Import = new CrispImport({
   websiteId: CONFIG.WEBSITE_ID,
   urn: CONFIG.PLUGIN_URN,
   name: CONFIG.PLUGIN_NAME,

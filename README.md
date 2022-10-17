@@ -2,7 +2,7 @@
 
 Import all your conversations from your previous provider to Crisp. Wrapper around the [Crisp Node API](https://github.com/crisp-im/node-crisp-api)
 
-Copyright 2021 Crisp IM SARL. See LICENSE for copying information.
+Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
 
 * **📝 Implements**: [node-crisp-api](https://github.com/crisp-im/node-crisp-api) at revision: 6.3.2
 * **😘 Maintainers**: [@baptistejamin](https://github.com/baptistejamin), [@eliottvincent](https://github.com/eliottvincent)
@@ -34,6 +34,30 @@ Copyright 2021 Crisp IM SARL. See LICENSE for copying information.
 * Run `node index.js`
 
 ## API
+
+### Create a new import context
+
+`CrispImport(config, options)` creates a new import context:
+* `config` must be an object representing the configuration of the import
+* `options` must be an object representing the options to use during the import
+
+```js
+var CrispImport = require("../lib/import");
+
+var Import = new CrispImport(
+  {
+    websiteId: "WEBSITE_ID",
+    urn: "PLUGIN_URN",
+    name: "PLUGIN_NAME",
+    identifier: "PLUGIN_TOKEN_IDENTIFIER",
+    key: "PLUGIN_TOKEN_KEY"
+  },
+
+  {
+    adapter: "zendesk"
+  }
+);
+```
 
 ### Import conversations from file
 
@@ -84,10 +108,10 @@ Import.importConversation(conversation).then(() => {
 
 Adapters allow you to convert conversations from the format of your current provider to the format Crisp expects. It will run before the actual import.
 
-The adapter to use (if any) must be specified in the `ImportLib` constructor:
+The adapter to use (if any) must be specified via the `CrispImport` constructor:
 
 ```js
-var Import = new ImportLib(
+var Import = new CrispImport(
   {
     ...
   },
