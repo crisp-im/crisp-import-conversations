@@ -79,3 +79,24 @@ Import.importConversation(conversation).then(() => {
   // Import is done. Conversation imported.
 });
 ```
+
+## Adapters
+
+Adapters allow you to convert conversations from the format of your current provider to the format Crisp expects. It will run before the actual import.
+
+The adapter to use (if any) must be specified in the `ImportLib` constructor:
+
+```js
+var Import = new ImportLib(
+  {
+    ...
+  },
+
+  {
+    adapter: "zendesk"
+  }
+);
+```
+Supported adapters are: `zendesk`.
+
+To write a new adapter, simply create a new file `/adapters` and take inspiration of the existing adapters.
