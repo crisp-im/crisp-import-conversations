@@ -10,7 +10,7 @@
     "contactid": "0",
     "name": "Cynthia Reilly",
     "email": "testuser@whmcs.com",
-    "cc": "",
+    "cc": "testuser_2@whmcs.com,testuser_3@redacted.fr",
     "date": "2016-01-01 06:26:29",
     "subject": "This is a sample ticket",
     "status": "Closed",
