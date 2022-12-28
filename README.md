@@ -13,9 +13,10 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
 2. Create your first plugin
 3. Add the following scopes:
   * `website:conversation:initiate` (write)
-  * `website:conversation:session` (write)
+  * `website:conversation:sessions` (write)
   * `website:conversation:messages` (write)
   * `website:conversation:states` (write)
+  * `website:conversation:participants` (write)
 
 4. Request your production token
 5. Publish your plugin as `private`
