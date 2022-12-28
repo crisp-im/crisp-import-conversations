@@ -1,0 +1,255 @@
+[
+  {
+    "id": 2107900999,
+    "number": 37099,
+    "threads": 4,
+    "type": "email",
+    "folderId": 6608999,
+    "status": "closed",
+    "state": "published",
+    "subject": "Delayed production",
+    "preview": "Hello, the processing time of the orders is lengthened during this period indeed. Currently, we manage to ship an order after 8 to 10 working days on average.",
+    "mailboxId": 273599,
+    "assignee": {
+      "id": 631199,
+      "type": "user",
+      "first": "John",
+      "last": "D.",
+      "photoUrl": "https://redacted.cloudfront.net/users/631199.redacted.jpeg",
+      "email": "john@acme.com"
+    },
+    "createdBy": {
+      "id": 541402999,
+      "type": "customer",
+      "first": "Bessie",
+      "last": "BERRY",
+      "photoUrl": "https://redacted.cloudfront.net/customer-avatar/05.png",
+      "email": "contact.bessie@gmail.com"
+    },
+    "createdAt": "2022-12-26T15:32:35Z",
+    "closedBy": 631199,
+    "closedByUser": {
+      "id": 631199,
+      "type": "user",
+      "first": "John",
+      "last": "D.",
+      "photoUrl": "https://redacted.cloudfront.net/users/631199.redacted.jpeg",
+      "email": "john@acme.com"
+    },
+    "closedAt": "2022-12-27T08:58:55Z",
+    "userUpdatedAt": "2022-12-27T08:58:55Z",
+    "source": {
+      "type": "beacon-v2",
+      "via": "customer"
+    },
+    "tags": [],
+    "cc": [],
+    "bcc": [],
+    "primaryCustomer": {
+      "id": 541402999,
+      "type": "customer",
+      "first": "Bessie",
+      "last": "BERRY",
+      "photoUrl": "https://redacted.cloudfront.net/customer-avatar/05.png",
+      "email": "contact.bessie@gmail.com"
+    },
+    "customFields": [
+      {
+        "id": 36498,
+        "name": "Category",
+        "value": "189999",
+        "text": "Order"
+      },
+      {
+        "id": 36499,
+        "name": "Orders",
+        "value": "4",
+        "text": "4"
+      }
+    ],
+    "_embedded": {
+      "threads": [
+        {
+          "id": 6271085994,
+          "type": "message",
+          "status": "closed",
+          "state": "published",
+          "action": {
+            "type": "original-author",
+            "associatedEntities": {
+              "user": 631199
+            }
+          },
+          "body": "Hello,<br /><br />the processing time of the orders is lengthened during this period indeed. Currently, we manage to ship an order after 8 to 10 working days on average.<br /><br />As for this order, we will make sure to send it today.<br /><br />Greetings,",
+          "source": {
+            "type": "web",
+            "via": "user"
+          },
+          "customer": {
+            "id": 541402999,
+            "first": "Bessie",
+            "last": "BERRY",
+            "photoUrl": "https://redacted.cloudfront.net/customer-avatar/05.png",
+            "email": "contact.bessie@gmail.com"
+          },
+          "createdBy": {
+            "id": 631199,
+            "type": "user",
+            "first": "John",
+            "last": "D.",
+            "photoUrl": "https://redacted.cloudfront.net/users/631199.286816.jpeg",
+            "email": "john@acme.com"
+          },
+          "savedReplyId": 0,
+          "to": [],
+          "cc": [],
+          "bcc": [],
+          "createdAt": "2022-12-27T08:58:55Z",
+          "openedAt": "2022-12-27T09:00:05Z"
+        },
+        {
+          "id": 6271083993,
+          "type": "note",
+          "status": "active",
+          "state": "published",
+          "action": {
+            "type": "default",
+            "associatedEntities": {}
+          },
+          "body": "We will try to send it today :)",
+          "source": {
+            "type": "web",
+            "via": "user"
+          },
+          "customer": {
+            "id": 541402999,
+            "first": "Bessie",
+            "last": "BERRY",
+            "photoUrl": "https://redacted.cloudfront.net/customer-avatar/05.png",
+            "email": "contact.bessie@gmail.com"
+          },
+          "createdBy": {
+            "id": 630999,
+            "type": "user",
+            "first": "Walter",
+            "last": "Sheltan",
+            "photoUrl": "https://redacted.cloudfront.net/users/630999.286810.jpg",
+            "email": "walter@acme.com"
+          },
+          "savedReplyId": 0,
+          "to": [],
+          "cc": [],
+          "bcc": [],
+          "createdAt": "2022-12-27T08:55:35Z"
+        },
+        {
+          "id": 6271028992,
+          "type": "customer",
+          "status": "active",
+          "state": "published",
+          "action": {
+            "type": "default",
+            "associatedEntities": {}
+          },
+          "body": "Hello, it's the order number 3355933999 on my Etsy shop.<br><br>Regards",
+          "source": {
+            "type": "email",
+            "via": "customer"
+          },
+          "customer": {
+            "id": 541402999,
+            "first": "Bessie",
+            "last": "BERRY",
+            "photoUrl": "https://redacted.cloudfront.net/customer-avatar/05.png",
+            "email": "contact.bessie@gmail.com"
+          },
+          "createdBy": {
+            "id": 541402999,
+            "type": "customer",
+            "first": "Bessie",
+            "last": "BERRY",
+            "photoUrl": "https://redacted.cloudfront.net/customer-avatar/05.png",
+            "email": "contact.bessie@gmail.com"
+          },
+          "savedReplyId": 0,
+          "to": [],
+          "cc": [],
+          "bcc": [],
+          "createdAt": "2022-12-27T08:12:44Z"
+        },
+        {
+          "id": 6271023991,
+          "type": "message",
+          "status": "closed",
+          "state": "published",
+          "action": {
+            "type": "original-author",
+            "associatedEntities": {
+              "user": 631199
+            }
+          },
+          "body": "Hello,<br /><br />Thanks for contacting us.<br /><br />Can you please tell us the number of this order from your dashboard?<br /><br />Greetings,",
+          "source": {
+            "type": "web",
+            "via": "user"
+          },
+          "customer": {
+            "id": 541402999,
+            "first": "Bessie",
+            "last": "BERRY",
+            "photoUrl": "https://redacted.cloudfront.net/customer-avatar/05.png",
+            "email": "contact.bessie@gmail.com"
+          },
+          "createdBy": {
+            "id": 631199,
+            "type": "user",
+            "first": "John",
+            "last": "D.",
+            "photoUrl": "https://redacted.cloudfront.net/users/631199.286816.jpeg",
+            "email": "john@acme.com"
+          },
+          "savedReplyId": 0,
+          "to": [],
+          "cc": [],
+          "bcc": [],
+          "createdAt": "2022-12-27T08:09:12Z",
+          "openedAt": "2022-12-27T08:09:50Z"
+        },
+        {
+          "id": 6269690990,
+          "type": "customer",
+          "status": "active",
+          "state": "published",
+          "action": {
+            "type": "default",
+            "associatedEntities": {}
+          },
+          "body": "Hello a customer placed an order on 22/12 on my store. I see that the production has not yet started. Is it possible to speed up the process? Thank you for your help!",
+          "source": {
+            "type": "beacon-v2",
+            "via": "customer"
+          },
+          "customer": {
+            "id": 541402999,
+            "first": "Bessie",
+            "last": "BERRY",
+            "photoUrl": "https://redacted.cloudfront.net/customer-avatar/05.png",
+            "email": "contact.bessie@gmail.com"
+          },
+          "createdBy": {
+            "id": 541402999,
+            "type": "customer",
+            "first": "Bessie",
+            "last": "BERRY",
+            "photoUrl": "https://redacted.cloudfront.net/customer-avatar/05.png",
+            "email": "contact.bessie@gmail.com"
+          },
+          "to": [],
+          "cc": [],
+          "bcc": [],
+          "createdAt": "2022-12-26T15:32:35Z"
+        }
+      ]
+    }
+  }
+]
