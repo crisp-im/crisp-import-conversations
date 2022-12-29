@@ -6,7 +6,8 @@ var Import = new CrispImport({
   urn: CONFIG.PLUGIN_URN,
   name: CONFIG.PLUGIN_NAME,
   identifier: CONFIG.PLUGIN_TOKEN_IDENTIFIER,
-  key: CONFIG.PLUGIN_TOKEN_KEY
+  key: CONFIG.PLUGIN_TOKEN_KEY,
+  defaultEmail: CONFIG.DEFAULT_EMAIL
 });
 
 Import.importFromFile("./res/conversations.json").then((result) => {

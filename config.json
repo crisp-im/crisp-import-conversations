@@ -1,7 +1,8 @@
 {
   "WEBSITE_ID": "",
   "PLUGIN_URN": "",
-  "PLUGIN_NAME": "",
   "PLUGIN_TOKEN_IDENTIFIER": "",
-  "PLUGIN_TOKEN_KEY": ""
+  "PLUGIN_TOKEN_KEY": "",
+  "PLUGIN_NAME": "Crisp Import",
+  "DEFAULT_EMAIL": "default_email@acme.com"
 }
