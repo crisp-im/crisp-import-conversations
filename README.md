@@ -27,6 +27,7 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
 
 * `git clone https://github.com/crisp-im/crisp-import-conversations.git`
 * `cd crisp-import-conversations`
+* `npm install`
 * Open `config.json` and update the following:
   * Update `WEBSITE_ID` (https://help.crisp.chat/en/article/how-to-find-the-website-id-1ylqx1s/)
   * Update `PLUGIN_URN`, `PLUGIN_NAME` (optional)
