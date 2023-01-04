@@ -67,10 +67,15 @@ var Import = new CrispImport(
 * `path` must be a string representing the path to the JSON file
 
 ```js
-Import.importFromFile("./res/conversations.json").then((result) => {
-  console.log(`Import is done. ${result.count} conversations imported.`)
-  // Import is done. 2 conversations imported.
-});
+Import.importFromFile("./res/conversations.json")
+  .then((result) => {
+    console.log(`Import is done. ${result.count} conversations imported.`)
+    // Import is done. 2 conversations imported.
+  })
+  .catch((error) => {
+    console.log("Import failed.");
+    console.log(error);
+  });
 ```
 
 ### Import a single conversation
@@ -100,10 +105,11 @@ let conversation = {
   }]
 };
 
-Import.importConversation(conversation).then(() => {
-  console.log(`Import is done. Conversation imported.`)
-  // Import is done. Conversation imported.
-});
+Import.importConversation(conversation)
+  .then(() => {
+    console.log(`Import is done. Conversation imported.`)
+    // Import is done. Conversation imported.
+  });
 ```
 
 ## Adapters

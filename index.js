@@ -10,6 +10,11 @@ var Import = new CrispImport({
   defaultEmail: CONFIG.DEFAULT_EMAIL
 });
 
-Import.importFromFile("./res/conversations.json").then((result) => {
-  console.log(`Import is done. ${result.count} conversations imported.`)
-});
+Import.importFromFile("./res/conversations.json")
+  .then((result) => {
+    console.log(`Import is done. ${result.count} conversations imported.`)
+  })
+  .catch((error) => {
+    console.log("Import failed.");
+    console.log(error);
+  });
