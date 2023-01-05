@@ -3,6 +3,7 @@ var CrispImport = require("./lib/import");
 
 var Import = new CrispImport({
   websiteId: CONFIG.WEBSITE_ID,
+  websitePlan: CONFIG.WEBSITE_PLAN,
   urn: CONFIG.PLUGIN_URN,
   name: CONFIG.PLUGIN_NAME,
   identifier: CONFIG.PLUGIN_TOKEN_IDENTIFIER,
