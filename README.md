@@ -19,7 +19,9 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
   * `website:conversation:participants` (write)
 
 4. Request your production token
-5. Publish your plugin as `private`
+5. Request a higher production quota, following this formula: $5*(number ~ of ~ conversations)+(number ~
+of ~ conversations)*(average_number ~ of ~ messages ~ per ~ conversation)$
+6. Publish your plugin as `private`
 
 **Note: You can temporarily use a development token for testing, however, you will be rate-limited at some point.**
 
