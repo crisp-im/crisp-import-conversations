@@ -37,6 +37,8 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
 * Edit the json file in `res/conversations.json`
 * Run `node index.js`
 
+⚠️ __Before starting the import, you should contact [our support](https://crisp.chat), as we will need to temporarily block outgoing emails for your Crisp website (in order to avoid unwanted emails being sent during the import).__
+
 ## API
 
 ### Create a new import context
