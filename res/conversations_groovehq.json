@@ -1,0 +1,343 @@
+[
+  {
+    "created_at": "2023-01-18T22:27:54Z",
+    "href": "https://api.groovehq.com/v1/tickets/14565",
+    "links": {
+      "customer": {
+        "id": "1047915691",
+        "href": "https://api.groovehq.com/v1/customers/contact.bessie@gmail.com"
+      },
+      "drafts": {
+        "href": "https://api.groovehq.com/v1/tickets/14565/drafts"
+      },
+      "state": {
+        "href": "https://api.groovehq.com/v1/tickets/14565/state"
+      },
+      "messages": {
+        "href": "https://api.groovehq.com/v1/tickets/14565/messages"
+      },
+      "assignee": {
+        "id": "2034594954",
+        "href": "https://api.groovehq.com/v1/agents/john@acme.com"
+      }
+    },
+    "id": 14565,
+    "number": 14565,
+    "priority": "low",
+    "resolution_time": 4936,
+    "state": "closed",
+    "state_int": 5000,
+    "title": "RE: Comments on task \"Acme Oasis - Acme Oasis 2 - Amazon Shipment\"",
+    "updated_at": "2023-01-18T23:50:10Z",
+    "system_updated_at": "2023-01-18T23:50:10Z",
+    "assigned_group_id": null,
+    "assigned_group": null,
+    "closed_by": "john@acme.com",
+    "tags": [],
+    "tag_ids": [],
+    "tag_ids_hashed": [],
+    "tag_colors": [],
+    "mailbox": "Inbox",
+    "mailbox_id": "5689155390",
+    "message_count": 2,
+    "attachment_count": 0,
+    "summary": "Hi Bessie, Thank you, I will inform the client.  Regards,John",
+    "search_summary": null,
+    "last_message_conversation_type": "enduser",
+    "last_message_author": {
+      "id": "2034594954",
+      "type": "Agent"
+    },
+    "type": "Email",
+    "sub_type": null,
+    "snoozed_until": null,
+    "snoozed_by_id": null,
+    "interaction_count": 3,
+    "state_changed_at": "2023-01-18T23:50:10Z",
+    "assigned_at": "2023-01-18T23:50:10Z",
+    "deleted_at": null,
+    "browser": null,
+    "page_title": null,
+    "page_url": null,
+    "referrer": null,
+    "platform": null,
+    "assignor_id": "2034594954",
+    "follower_ids": [],
+    "latest_collaborator_comment_at": "2023-01-18T23:50:10Z",
+    "assignee": {
+      "agent": {
+        "id": "2034594954",
+        "gid": "ag_2034594954",
+        "email": "john@acme.com",
+        "first_name": "John",
+        "last_name": "",
+        "href": "https://api.groovehq.com/v1/agents/john@acme.com",
+        "links": {
+          "groups": {
+            "href": "https://api.groovehq.com/v1/groups?agent=john%40acme.com"
+          },
+          "tickets": {
+            "href": "https://api.groovehq.com/v1/tickets?assignee=john%40acme.com"
+          }
+        },
+        "username": "John",
+        "avatar_url": "https://s3.amazonaws.com/groovehq/uploaded/big/redacted",
+        "archived": false,
+        "last_archived_at": null,
+        "created_at": "2022-01-11T01:07:49Z",
+        "company_role": null,
+        "role": "admin",
+        "chat_id": "@2034594954_4590450450_a:chat-server-cluster.production.groovehq.com",
+        "invitation_sent_at": "2022-01-11T01:07:49Z",
+        "invitation_accepted_at": "2022-01-11T01:37:29Z",
+        "invited_by_id": 12895493,
+        "invitation_accepted": true,
+        "last_sign_in_at": "2023-01-18T15:06:48Z",
+        "state": "active",
+        "otp_enabled": false,
+        "otp_confirmed": false,
+        "chat_allow_round_robin": true,
+        "include_in_analytics": true,
+        "visible_in_widget": true
+      }
+    },
+    "customer": {
+      "customer": {
+        "href": "https://api.groovehq.com/v1/customers/contact.bessie@gmail.com",
+        "links": {
+          "tickets": {
+            "href": "https://api.groovehq.com/v1/tickets?customer=contact.bessie%40gmail.com"
+          }
+        },
+        "id": "1047915691",
+        "type": "Customer",
+        "email": "contact.bessie@gmail.com",
+        "name": "Bessie Berry",
+        "first_name": "Bessie",
+        "last_name": "Berry",
+        "about": null,
+        "twitter_username": null,
+        "title": null,
+        "company_name": null,
+        "phone_number": null,
+        "location": "",
+        "website_url": null,
+        "linkedin_username": null,
+        "custom": {},
+        "avatar_url": "https://secure.gravatar.com/avatar/5caee43dfc4cb262aeba03997cb4fe91?d=https%3A%2F%2Fd264nejmps9opj.cloudfront.net%2Fmono%2Fbr.png"
+      }
+    },
+    "actions": [
+      {
+        "id": "0349304545",
+        "actor": {
+          "id": "1047915691",
+          "type": "Customer",
+          "email": "contact.bessie@gmail.com",
+          "name": "Bessie Berry"
+        },
+        "change": {
+          "state": "opened",
+          "state_int": 2000,
+          "type": "State"
+        },
+        "changeset": "54f5a5c0-e024-49bc-8361-95500ef80845",
+        "ticket": {
+          "number": 14565
+        },
+        "created_at": "2023-01-18T22:27:54Z"
+      },
+      {
+        "id": "3405934954",
+        "actor": {
+          "id": "1047915691",
+          "type": "Customer",
+          "email": "contact.bessie@gmail.com",
+          "name": "Bessie Berry"
+        },
+        "change": {
+          "id": "8977335137",
+          "note": false,
+          "forward": false,
+          "to": [
+            {
+              "id": "5689155390",
+              "email": "process@acme.com",
+              "name": "Inbox",
+              "first_name": null,
+              "last_name": null,
+              "type": "Mailbox"
+            }
+          ],
+          "cc": [
+            {
+              "id": "2034594954",
+              "email": "john@acme.com",
+              "first_name": "John",
+              "last_name": "Doe",
+              "avatar_url": "https://s3.amazonaws.com/groovehq/uploaded/big/redacted",
+              "type": "Agent",
+              "name": "John Doe",
+              "twitter_username": null
+            },
+            {
+              "id": "3493949394",
+              "email": "walter.s@logistics.acme.com",
+              "first_name": "Walter",
+              "last_name": "S.",
+              "avatar_url": "https://secure.gravatar.com/avatar/3b9b193d4cd74f325d133cd83602f6b8?d=https%3A%2F%2Fd264nejmps9opj.cloudfront.net%2Fmono%2Fmp.png",
+              "type": "Customer",
+              "name": "Walter S.",
+              "twitter_username": null
+            }
+          ],
+          "bcc": [],
+          "deliver_by": null,
+          "agent_response": false,
+          "comment_template_id": null,
+          "response_time": null,
+          "message_type": "email",
+          "has_raw_email": true,
+          "body": "<div>\n<div>\r\n<div>\r\n<div>\r\n<p>Hi John,</p>\n<p></p>\r\n<p></p>\n<p> </p>\r\n<p>I’ve created a shipment for the client. </p>\n<p></p>\r\n<p></p>\n<p> </p>\r\n<p>We will have this shipped ASAP.</p>\n<p></p>\r\n<p></p>\n<p> </p>\r\n<p>Thanks!</p>\n<p></p>\r\n<p>Bessie</p>\n<p></p>\r\n</div>\r\n</div>\r\n</div>\n</div>\r\n<div id=\"a59ada49-a492-4f1d-ac57-74be3a4194fc\" style=\"display:inline-block;\">\r\n<table cellspacing=\"0\" style=\"width:50px;border:0 none black;\">\r\n\r\n<tr>\r\n<td style=\"height:18px;padding:0;border-width:0 0 1px 0;border-style:none none solid none;border-color:#EAEAEA;\">\r\n </td>\r\n</tr>\r\n\r\n</table>\n<table cellspacing=\"0\" style=\"width:90%;line-height:17px;border:0 none black;\">\r\n\r\n<tr>\r\n<td style=\"height:17px;padding:0;border:0 none black;\"> </td>\r\n</tr>\r\n<tr>\r\n<td style=\"padding:0;border:0 none black;color:#666666;font-size:12px;font-family:'Segoe UI' , 'Segoe WP' , sans-serif;\">\r\nYou're receiving this message because you're a member of the FLDF &amp; TTL TEAM group from Acme Logistics. To take part in this conversation, reply all to this message.</td>\r\n</tr>\r\n<tr>\r\n<td style=\"height:17px;padding:0;border:0 none black;\"> </td>\r\n</tr>\r\n<tr>\r\n<td style=\"padding:0;border:0 none black;font-size:12px;font-family:'Segoe UI' , 'Segoe WP' , sans-serif;\">\r\n<span style=\"display:inline-block;\"><a style=\"color:#666666;text-decoration:none;font-size:12px;font-family:'Segoe UI' , 'Segoe WP' , sans-serif;\" href=\"https://outlook.office365.com/owa/TTLFLDFTeam@logistics.acme.com/groupsubscription.ashx?source=EscalatedMessage&amp;action=files&amp;GuestId=3641ed59-3be0-40da-befa-059902bc55f3\">View group files</a></span><span style=\"color:#C8C8C8;\">   |   </span><span style=\"display:inline-block;\"><a style=\"color:#666666;text-decoration:none;font-size:12px;font-family:'Segoe UI' , 'Segoe WP' , sans-serif;\" id=\"1B526DAA-BE5C-4A9D-948F-D99039D8EE4B\" href=\"https://outlook.office365.com/owa/TTLFLDFTeam@logistics.acme.com/groupsubscription.ashx?source=EscalatedMessage&amp;action=leave&amp;GuestId=3641ed59-3be0-40da-befa-059902bc55f3\">Leave group</a></span><span style=\"color:#C8C8C8;\">   |   </span><span style=\"display:inline-block;\"><a style=\"color:#666666;text-decoration:none;font-size:12px;font-family:'Segoe UI' , 'Segoe WP' , sans-serif;\" href=\"https://acme.ms/o365g\">Learn\r\n more about Microsoft 365 Groups</a></span>\n</td>\r\n</tr>\r\n<tr>\r\n<td style=\"height:17px;padding:0;border:0 none black;\"> </td>\r\n</tr>\r\n\r\n</table>\n</div>",
+          "attachments": [],
+          "conversation_type": "enduser",
+          "parts": [
+            {
+              "type": "text",
+              "value": "<div style=\"\">\n<div>\n<div>\n<div>\n<p style='font-size:11.0pt;font-family:\"Calibri\" , sans-serif;margin:0in;'>Hi John,<p></p></p>\n<p style='font-size:11.0pt;font-family:\"Calibri\" , sans-serif;margin:0in;'><p> </p></p>\n<p style='font-size:11.0pt;font-family:\"Calibri\" , sans-serif;margin:0in;'>I’ve created a shipment for the client. <p></p></p>\n<p style='font-size:11.0pt;font-family:\"Calibri\" , sans-serif;margin:0in;'><p> </p></p>\n<p style='font-size:11.0pt;font-family:\"Calibri\" , sans-serif;margin:0in;'>We will have this shipped ASAP.<p></p></p>\n<p style='font-size:11.0pt;font-family:\"Calibri\" , sans-serif;margin:0in;'><p> </p></p>\n<p style='font-size:11.0pt;font-family:\"Calibri\" , sans-serif;margin:0in;'>Thanks!<p></p></p>\n<p style='font-size:11.0pt;font-family:\"Calibri\" , sans-serif;margin:0in;'>Bessie<p></p></p>\n</div>\n</div>\n</div>\n</div>",
+              "index": 0
+            }
+          ],
+          "type": "Message"
+        },
+        "changeset": "54f5a5c0-e024-49bc-8361-95500ef80845",
+        "ticket": {
+          "number": 14565
+        },
+        "created_at": "2023-01-18T22:27:54Z"
+      },
+      {
+        "id": "0046579415",
+        "actor": {
+          "id": "2034594954",
+          "type": "Agent",
+          "email": "john@acme.com",
+          "name": "John Doe"
+        },
+        "change": {
+          "id": "4338596873",
+          "note": false,
+          "forward": false,
+          "to": [
+            {
+              "id": "1047915691",
+              "email": "contact.bessie@gmail.com",
+              "first_name": "Bessie",
+              "last_name": "Berry",
+              "avatar_url": "https://secure.gravatar.com/avatar/5caee43dfc4cb262aeba03997cb4fe91?d=https%3A%2F%2Fd264nejmps9opj.cloudfront.net%2Fmono%2Fbr.png",
+              "type": "Customer",
+              "name": "Bessie Berry",
+              "twitter_username": null
+            }
+          ],
+          "cc": [
+            {
+              "id": "3493949394",
+              "email": "walter.s@logistics.acme.com",
+              "first_name": "Walter",
+              "last_name": "S.",
+              "avatar_url": "https://secure.gravatar.com/avatar/3b9b193d4cd74f325d133cd83602f6b8?d=https%3A%2F%2Fd264nejmps9opj.cloudfront.net%2Fmono%2Fws.png",
+              "type": "Customer",
+              "name": "Walter S.",
+              "twitter_username": null
+            }
+          ],
+          "bcc": [],
+          "deliver_by": null,
+          "agent_response": true,
+          "comment_template_id": null,
+          "response_time": 4936,
+          "message_type": "email",
+          "has_raw_email": false,
+          "body": "<div>Hi Bessie,</div><div>\n<br>\n</div><div>Thank you, I will inform the client. </div><div>\n<br>\n</div><div>Regards,</div><div>John</div><div>\n<br>\n</div>",
+          "attachments": [],
+          "conversation_type": "enduser",
+          "parts": [],
+          "type": "Message"
+        },
+        "changeset": "14c77a33-c875-472f-b1a6-c1957661159a",
+        "ticket": {
+          "number": 14565
+        },
+        "created_at": "2023-01-18T23:50:10Z"
+      },
+      {
+        "id": "4596945969",
+        "actor": {
+          "id": "2034594954",
+          "type": "Agent",
+          "email": "john@acme.com",
+          "name": "John Doe"
+        },
+        "change": {
+          "state": "closed",
+          "state_int": 5000,
+          "type": "State"
+        },
+        "changeset": "14c77a33-c875-472f-b1a6-c1957661159a",
+        "ticket": {
+          "number": 14565
+        },
+        "created_at": "2023-01-18T23:50:10Z"
+      },
+      {
+        "id": "2030545005",
+        "actor": {
+          "id": "2034594954",
+          "type": "Agent",
+          "email": "john@acme.com",
+          "name": "John Doe"
+        },
+        "change": {
+          "agent": {
+            "id": "2034594954",
+            "role": "admin",
+            "email": "john@acme.com"
+          },
+          "previous_agent": {
+            "id": null,
+            "role": null,
+            "email": null
+          },
+          "type": "Agent"
+        },
+        "changeset": "14c77a33-c875-472f-b1a6-c1957661159a",
+        "ticket": {
+          "number": 14565
+        },
+        "created_at": "2023-01-18T23:50:10Z"
+      },
+      {
+        "id": "4599340540",
+        "actor": {
+          "id": "1047915691",
+          "type": "Customer",
+          "email": "contact.bessie@gmail.com",
+          "name": "Bessie Berry"
+        },
+        "change": {
+          "event": "open",
+          "message": {
+            "id": "4338596873"
+          },
+          "type": "Ticket::CustomerActionOpen"
+        },
+        "changeset": "ef16c07d-dc23-4b76-ae03-285f72931d22",
+        "ticket": {
+          "number": 14565
+        },
+        "created_at": "2023-01-18T23:50:20Z"
+      }
+    ]
+  }
+]
