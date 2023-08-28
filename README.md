@@ -11,16 +11,14 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
 
 1. Create an account on https://marketplace.crisp.chat/
 2. Create your first plugin
-3. Add the following scopes:
+3. Ask a production token with the following scopes:
   * `website:conversation:initiate` (write)
   * `website:conversation:sessions` (write)
   * `website:conversation:messages` (write)
   * `website:conversation:states` (write)
   * `website:conversation:participants` (write)
-
-4. Request your production token
 5. Request a higher production quota, following this formula: $(n \times 5)+(n \times m)$ (`n` being the number of conversations, `m` being the average number of message per conversation)
-6. Publish your plugin as `private`
+6. Activate your plugin as `private`
 
 **Note: You can temporarily use a development token for testing, however, you will be rate-limited at some point.**
 
@@ -34,7 +32,7 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
   * Update `WEBSITE_PLAN` (see [Plans Limits](#plans-limits))
   * Update `PLUGIN_URN`, `PLUGIN_NAME` (optional)
   * Update `PLUGIN_TOKEN_IDENTIFIER` and `PLUGIN_TOKEN_key` using your production tokens
-* Edit the json file in `res/conversations.json`
+* Edit the json file in `res/conversations.json` with your own data
 * Run `node index.js`
 
 ⚠️ __Before starting the import, you should contact [our support](https://crisp.chat), as we will need to temporarily block outgoing emails for your Crisp website (in order to avoid unwanted emails being sent during the import).__
