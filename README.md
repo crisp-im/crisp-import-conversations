@@ -65,8 +65,9 @@ var Import = new CrispImport(
 
 ### Import conversations from file
 
-`importFromFile(path)` imports conversations from a JSON file:
-* `path` must be a string representing the path to the JSON file
+`importFromFile(conversations_path, messages_path)` imports conversations from a JSON / CSV / XML file:
+* `conversations_path`: a string representing the path to the conversations file
+* `messages_path` (optional): a string representing the path to the messages file (in case conversations and messages are in two different files, e.g. for Gorgias)
 
 ```js
 Import.importFromFile("./res/conversations.json")
@@ -131,7 +132,7 @@ var Import = new CrispImport(
   }
 );
 ```
-Supported adapters are: `groovehq`, `helpscout`, `whmcs`, `zendesk`.
+Supported adapters are: `gorgias`, `groovehq`, `helpscout`, `whmcs`, `zendesk`.
 
 To write a new adapter, simply create a new file `/adapters` and take inspiration from the existing adapters.
 
