@@ -42,8 +42,17 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
 ### Create a new import context
 
 `CrispImport(config, options)` creates a new import context:
-* `config` must be an object representing the configuration of the import
-* `options` must be an object representing the options to use during the import
+* `config` an object representing the configuration of the import:
+  * `websiteId`: your Crisp website identifier
+  * `websitePlan`: see [Plans Limits](#plans-limits)
+  * `urn`: your plugin URN
+  * `name`: your plugin name (used for notes messages at the beginning and end of imported conversations)
+  * `identifier`: your token identifer
+  * `key`: your token key
+  * `defaultEmail`: default email used for conversations with no nickname
+  * `defaultNickname`: default nickname used for conversations / messages with no nickname
+* `config` an object of options to configure the behavior:
+  * `adapter`: see [Adapters](#adapters)
 
 ```js
 var CrispImport = require("../lib/import");
