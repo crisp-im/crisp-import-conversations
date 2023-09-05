@@ -5,5 +5,6 @@
   "PLUGIN_TOKEN_KEY": "",
   "WEBSITE_PLAN": "",
   "PLUGIN_NAME": "Crisp Import",
-  "DEFAULT_EMAIL": "default_email@acme.com"
+  "DEFAULT_EMAIL": "default_email@acme.com",
+  "DEFAULT_NICKNAME": "Acme Inc."
 }
