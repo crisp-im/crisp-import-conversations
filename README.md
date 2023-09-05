@@ -51,8 +51,9 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
   * `key`: your token key
   * `defaultEmail`: default email used for conversations with no nickname
   * `defaultNickname`: default nickname used for conversations / messages with no nickname
-* `config` an object of options to configure the behavior:
+* `options` an object of options to configure the behavior:
   * `adapter`: see [Adapters](#adapters)
+  * `resume`: whether to resume the previous import or no (this will skip previously imported conversations)
 
 ```js
 var CrispImport = require("../lib/import");
