@@ -32,7 +32,8 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
   * Update `WEBSITE_PLAN` (see [Plans Limits](#plans-limits))
   * Update `PLUGIN_URN`, `PLUGIN_NAME` (optional)
   * Update `PLUGIN_TOKEN_IDENTIFIER` and `PLUGIN_TOKEN_key` using your production tokens
-* Edit the json file in `res/conversations.json` with your own data
+* Edit the json file in `res/conversations.json` with your own data (add a `res/messages.json` file in case your conversations and messages are in two different files, e.g. for Gorgias)
+* Edit `index.js` if needed (for example to specify options)
 * Run `node index.js`
 
 ⚠️ __Before starting the import, you should contact [our support](https://crisp.chat), as we will need to temporarily block outgoing emails for your Crisp website (in order to avoid unwanted emails being sent during the import).__
@@ -49,8 +50,9 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
   * `name`: your plugin name (used for notes messages at the beginning and end of imported conversations)
   * `identifier`: your token identifer
   * `key`: your token key
-  * `defaultEmail`: default email used for conversations with no nickname
-  * `defaultNickname`: default nickname used for conversations / messages with no nickname
+  * `defaultUserEmail`: default user email used for conversations with no nickname
+  * `defaultUserNickname`: default user nickname used for conversations / messages with no nickname*
+  * `defaultOperatorNickname`: default operator nickname used for operator messages with no nickname
 * `options` an object of options to configure the behavior:
   * `adapter`: see [Adapters](#adapters)
   * `resume`: whether to resume the previous import or no (this will skip previously imported conversations)
