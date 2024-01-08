@@ -36,12 +36,14 @@
     },
     "assignee": {
       "id": 373483485834,
-      "name": "John Doe",
+      "name": "John Smith",
       "email": "john@acme.com",
       "time_zone": "Paris",
       "iana_time_zone": "Europe/Paris",
       "phone": null,
-      "photo": null,
+      "photo": {
+        "content_url": "https://storage.crisp.chat/users/avatar/operator/aaee44b087f30800/p1000094_3le9ge.jpg"
+      },
       "locale": "en-US"
     },
     "comments": [
@@ -51,6 +53,7 @@
         "author_id": 383488458353,
         "body": "Hello, I need help",
         "html_body": "<div class=\"zd-comment zd-comment-pre-styled\" dir=\"auto\"><div dir=\"ltr\">Hello, I need help</div></div>",
+        "public": true,
         "ticket_id": 5,
         "via": {
           "channel": "email",
@@ -85,6 +88,7 @@
         "author_id": 373483485834,
         "body": "Thank you for choosing Acme and reaching out to our Customer Support Team .\n\nHow can I help you?",
         "html_body": "<div class=\"zd-comment\" dir=\"auto\">Thank you for choosing Acme and reaching out to our Customer Support Team .<br><br>nHow can I help you?</div>",
+        "public": true,
         "ticket_id": 5,
         "via": {
           "channel": "web",
@@ -101,6 +105,35 @@
             "latitude": 48.8584,
             "longitude": 2.2945
           }
+        }
+      },
+      {
+        "id": 600804781809,
+        "type": "Comment",
+        "author_id": 373483485834,
+        "body": "**Next steps >>**\n\n\n- Reaching out to the user directly to john.doe@gmail.com and confirming the change",
+        "html_body": "<div class=\"zd-comment\" dir=\"auto\"><strong>Next steps &gt;&gt;</strong><br>&nbsp;<br><ul dir=\"auto\"><li>Reaching out to the user directly to <a href=\"mailto:john.doe@gmail.com\" rel=\"noreferrer\">john.doe@gmail.com</a> and confirming the change</li></ul></div>",
+        "plain_body": "Next steps &gt;&gt;\n&nbsp;\n  Reaching out to the user directly to john.doe@gmail.com and confirming the change",
+        "public": false,
+        "attachments": [],
+        "ticket_id": 5,
+        "via": {
+          "channel": "web",
+          "source": {
+            "from": {},
+            "to": {},
+            "rel": null
+          }
+        },
+        "metadata": {
+          "system": {
+            "client": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+            "ip_address": "132.213.123.234",
+            "location": "Paris, Ile-de-France (FR)",
+            "latitude": 48.8584,
+            "longitude": 2.2945
+          },
+          "custom": {}
         }
       }
     ]
