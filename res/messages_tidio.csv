@@ -1,0 +1,11 @@
+CONVERSATION_ID,THREAD_ID,TIME_SENT,CHANNEL,SENDER,MESSAGE_CONTENT,NAME,FIRST_NAME,LAST_NAME,EMAIL,PHONE,OS_NAME,BROWSER
+958725163,1579680000,2024-04-17T15:19:13Z,chat,automation,Bonjour Ã  tous ! Je suis lÃ  si vous avez besoin de quelque aide que ce soit ð,,,,,,,
+958725163,1579680000,2024-04-17T15:22:31Z,chat,visitor,Hello,alan@acme.com,,,alan@acme.com,,OS X,Chrome
+958740115,1579680000,2024-04-17T15:31:14Z,chat,automation,Bonjour ð Que puis-je faire pour vous ?,,,,,,,
+958740115,1579680000,2024-04-17T15:33:02Z,chat,visitor,Bonjour je serais intÃ©ressÃ© par le Sigma l'avez vous en stock ?,#504b0,,,,,OS X,Safari
+958740115,1579680000,2024-04-17T15:33:47Z,chat,operator,Bonjour et merci pour votre sollicitation ð oui, en quelle configuration ?,,,,,,,
+958753466,1579680000,2024-04-17T15:41:55Z,chat,automation,Bonjour ð Que puis-je faire pour vous ?,,,,,,,
+958753466,1579680000,2024-04-17T15:42:16Z,chat,visitor,"Bonjour, oui merci :) Avez vous en stock le Nikon ?",#08394,,,,,OS X,Safari
+958753466,1579680000,2024-04-17T15:42:34Z,chat,operator,"Bonjour, ",,,,,,,
+958753466,1579680000,2024-04-17T15:42:41Z,chat,operator,Merci de nous avoir contactÃ©,,,,,,,
+958753466,1579680000,2024-04-17T15:42:57Z,chat,operator,"Biensur nous avons actuellement le produit en stock",,,,,,,
