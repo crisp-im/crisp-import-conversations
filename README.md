@@ -22,6 +22,8 @@ Copyright 2021 Crisp IM SAS. See LICENSE for copying information.
 
 **Note: You can temporarily use a development token for testing, however, you will be rate-limited at some point.**
 
+⚠️ __Before starting the import, you should make sure you have requested a production token with the required scopes and a sufficient quota. If that's not the case, the import may stop at some point. In that situation, you will have to request the missing scopes and/or ask for a higher quota. Once this is approved, you can start the import again, with the `resume` option set to `true`, so that the conversations that were already imported are skipped.__
+
 ## Usage
 
 * `git clone https://github.com/crisp-im/crisp-import-conversations.git`
