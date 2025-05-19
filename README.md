@@ -156,12 +156,12 @@ To write a new adapter, simply create a new file `/adapters` and take inspiratio
 
 ## Plans Limits
 
-You can use this import script with any of Crisp plans: **Basic**, **Pro** or **Unlimited**.
+You can use this import script with any of Crisp plans: **Free**, **Mini**, **Essentials** or **Plus**.
 
 Some limits are however to consider:
-* **Basic**: no message of type `note`, max. 1 extra participant
-* **Pro**: max. 3 extra participants
-* **Unlimited**: max. 10 extra participants
+* **Free**: no message of type `note`, max. 1 extra participant
+* **Mini**: max. 3 extra participants
+* **Essentials** and **Plus**: max. 10 extra participants
 
-It is recommended that you specify the `WEBSITE_PLAN` configuration variable with either `basic`, `pro` or `unlimited` as a value.
-This way, the script will not proceed to useless API requests (e.g. creating more participants than allowed, or sending a `note` message while being on Basic plan).
+It is recommended that you specify the `WEBSITE_PLAN` configuration variable with either `free`, `mini`, `essentials` or `plus` as a value.
+This way, the script will not proceed to useless API requests (e.g. creating more participants than allowed, or sending a `note` message while being on Free plan).
