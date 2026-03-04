@@ -51,11 +51,10 @@ var fetchAndMerge = () => {
   if (!CONFIG.GCS_BASE_URL) {
     return Promise.reject(new Error("GCS_BASE_URL is required in config.json"));
   }
+  const baseUrl = CONFIG.GCS_BASE_URL.replace(/\/+$/, '');
   return Promise.all(
     CONFIG.GCS_JSON_FILES.map(filename => {
-      const url = `${CONFIG.GCS_BASE_URL}/${filename}`;
-      console.log(`Fetching ${url}...`);
-      return fetchJson(url);
+      const url = `${baseUrl}/${encodeURIComponent(filename)}`;
     })
   )
   .then((results) => {
