@@ -25,6 +25,11 @@ var Import = new CrispImport(
 var fetchJson = (url) => {
   return new Promise((resolve, reject) => {
     https.get(url, (res) => {
+      if (res.statusCode !== 200) {
+        reject(new Error(`HTTP ${res.statusCode} for ${url}`));
+        res.resume();
+        return;
+      }
       let data = "";
       res.on("data", chunk => data += chunk);
       res.on("end", () => {
@@ -40,7 +45,12 @@ var fetchJson = (url) => {
 
 var fetchAndMerge = () => {
   console.log("Fetching conversations from GCS...");
-
+  if (!CONFIG.GCS_JSON_FILES || CONFIG.GCS_JSON_FILES.length === 0) {
+    return Promise.reject(new Error("GCS_JSON_FILES is required in config.json"));
+  }
+  if (!CONFIG.GCS_BASE_URL) {
+    return Promise.reject(new Error("GCS_BASE_URL is required in config.json"));
+  }
   return Promise.all(
     CONFIG.GCS_JSON_FILES.map(filename => {
       const url = `${CONFIG.GCS_BASE_URL}/${filename}`;
