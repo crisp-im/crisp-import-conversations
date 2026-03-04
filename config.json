@@ -1,11 +1,11 @@
 {
-  "WEBSITE_ID": "",
-  "PLUGIN_URN": "",
-  "PLUGIN_TOKEN_IDENTIFIER": "",
-  "PLUGIN_TOKEN_KEY": "",
-  "WEBSITE_PLAN": "",
-  "PLUGIN_NAME": "Crisp Import",
-  "DEFAULT_USER_EMAIL": "default_email@acme.com",
-  "DEFAULT_USER_NICKNAME": "Acme Inc.",
-  "DEFAULT_OPERATOR_NICKNAME": "John"
+  "WEBSITE_ID": "3fc5a276-c516-45bc-9571-fbb25b0cdfcb",
+  "PLUGIN_URN": "urn:remi.lefort:intercom-conversations-import:0",
+  "PLUGIN_TOKEN_IDENTIFIER": "4d9d07e3-da27-4d25-9070-55e9c830ebb3",
+  "PLUGIN_TOKEN_KEY": "055c3a64935ad6ba99d03818913d8ef5943098a7bb27857b8e09d7a36ae03bd2",
+  "WEBSITE_PLAN": "essentials",
+  "PLUGIN_NAME": "Intercom Conversations Import",
+  "DEFAULT_USER_EMAIL": "no-name@no-name.com",
+  "DEFAULT_USER_NICKNAME": "No Name",
+  "DEFAULT_OPERATOR_NICKNAME": "Romain"
 }
