@@ -45,7 +45,7 @@ var fetchJson = (url) => {
 
 var fetchAndMerge = () => {
   console.log("Fetching conversations from GCS...");
-  if (!CONFIG.GCS_JSON_FILES || CONFIG.GCS_JSON_FILES.length === 0) {
+  if (!CONFIG.GCS_JSON_FILES || CONFIG.GCS_JSON_FILES.filter(f => f).length === 0) {
     return Promise.reject(new Error("GCS_JSON_FILES is required in config.json"));
   }
   if (!CONFIG.GCS_BASE_URL) {
@@ -59,7 +59,7 @@ var fetchAndMerge = () => {
     })
   )
   .then((results) => {
-    const merged = results.reduce((acc, data) => {
+    const merged = results.reduce((acc, { filename, data }) => {
       let conversations;
       if (Array.isArray(data)) {
         conversations = data;
