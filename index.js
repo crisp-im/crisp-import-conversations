@@ -54,19 +54,29 @@ var fetchAndMerge = () => {
   const baseUrl = CONFIG.GCS_BASE_URL.replace(/\/+$/, '');
   return Promise.all(
     CONFIG.GCS_JSON_FILES.map(filename => {
-      const url = `${baseUrl}/${encodeURIComponent(filename)}`;
-      return fetchJson(url);
+      const url = `${baseUrl}/${filename}`;
+      return fetchJson(url).then(data => {
+        console.log(`✅ Fetched ${url}: ${Array.isArray(data) ? data.length : typeof data} items`);
+        return data;
+      }).catch(err => {
+        console.error(`❌ Failed to fetch ${url}:`, err.message);
+        return undefined;
+      });
     })
   )
   .then((results) => {
-    const merged = results.reduce((acc, { filename, data }) => {
+    const merged = results.reduce((acc, data) => {
+      if (!data) {
+        console.warn(`⚠️  Received empty response, skipping`);
+        return acc;
+      }
       let conversations;
       if (Array.isArray(data)) {
         conversations = data;
       } else if (data.conversations) {
         conversations = data.conversations;
       } else {
-        console.warn(`⚠️  Unexpected format in ${filename}, skipping`);
+        console.warn(`⚠️  Unexpected format, skipping`);
         conversations = [];
       }
       return acc.concat(conversations);
