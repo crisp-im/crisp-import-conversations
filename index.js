@@ -59,12 +59,22 @@ var fetchAndMerge = () => {
   )
   .then((results) => {
     const merged = results.reduce((acc, data) => {
-      return acc.concat(Array.isArray(data) ? data : (data.conversations || []));
+      let conversations;
+      if (Array.isArray(data)) {
+        conversations = data;
+      } else if (data.conversations) {
+        conversations = data.conversations;
+      } else {
+        console.warn(`⚠️  Unexpected format in ${filename}, skipping`);
+        conversations = [];
+      }
+      return acc.concat(conversations);
     }, []);
 
     console.log(`Fetched ${merged.length} conversations total.`);
 
     const path = "./res/conversations.json";
+    fs.mkdirSync("./res", { recursive: true });
     fs.writeFileSync(path, JSON.stringify(merged, null, 2));
 
     return path;
