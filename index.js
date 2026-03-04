@@ -53,7 +53,7 @@ var fetchAndMerge = () => {
   }
   const baseUrl = CONFIG.GCS_BASE_URL.replace(/\/+$/, '');
   return Promise.all(
-    CONFIG.GCS_JSON_FILES.map(filename => {
+    CONFIG.GCS_JSON_FILES.filter(f => f).map(filename => {
       const url = `${baseUrl}/${filename}`;
       return fetchJson(url).then(data => {
         console.log(`✅ Fetched ${url}: ${Array.isArray(data) ? data.length : typeof data} items`);
