@@ -15,7 +15,8 @@ var Import = new CrispImport(
   },
   {
     adapter : "intercom",
-    resume  : false   // set to true to resume an interrupted import
+    resume  : false,
+    gcsBaseUrl : CONFIG.GCS_BASE_URL
   }
 );
 
