@@ -55,6 +55,7 @@ var fetchAndMerge = () => {
   return Promise.all(
     CONFIG.GCS_JSON_FILES.map(filename => {
       const url = `${baseUrl}/${encodeURIComponent(filename)}`;
+      return fetchJson(url);
     })
   )
   .then((results) => {
