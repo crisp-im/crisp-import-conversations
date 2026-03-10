@@ -1,7 +1,5 @@
 var CONFIG     = require("./config");
 var CrispImport = require("./lib/import");
-var https      = require("https");
-var fs         = require("fs");
 
 var Import = new CrispImport(
   {
@@ -16,86 +14,12 @@ var Import = new CrispImport(
     defaultOperatorNickname : CONFIG.DEFAULT_OPERATOR_NICKNAME
   },
   {
-    adapter    : "intercom",
-    resume     : false,
-    gcsBaseUrl : CONFIG.GCS_BASE_URL
+    adapter : "intercom",
+    resume  : false
   }
 );
 
-var fetchJson = (url) => {
-  return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
-      if (res.statusCode !== 200) {
-        reject(new Error(`HTTP ${res.statusCode} for ${url}`));
-        res.resume();
-        return;
-      }
-      let data = "";
-      res.on("data", chunk => data += chunk);
-      res.on("end", () => {
-        try {
-          resolve(JSON.parse(data));
-        } catch(e) {
-          reject(new Error(`Failed to parse JSON from ${url}: ${e.message}`));
-        }
-      });
-    }).on("error", reject);
-  });
-};
-
-var fetchAndMerge = () => {
-  console.log("Fetching conversations from GCS...");
-  if (!CONFIG.GCS_JSON_FILES || CONFIG.GCS_JSON_FILES.filter(f => f).length === 0) {
-    return Promise.reject(new Error("GCS_JSON_FILES is required in config.json"));
-  }
-  if (!CONFIG.GCS_BASE_URL) {
-    return Promise.reject(new Error("GCS_BASE_URL is required in config.json"));
-  }
-  const baseUrl = CONFIG.GCS_BASE_URL.replace(/\/+$/, '');
-  return Promise.all(
-    CONFIG.GCS_JSON_FILES.filter(f => f).map(filename => {
-      const url = `${baseUrl}/${filename}`;
-      return fetchJson(url).then(data => {
-        console.log(`✅ Fetched ${url}: ${Array.isArray(data) ? data.length : typeof data} items`);
-        return data;
-      }).catch(err => {
-        console.error(`❌ Failed to fetch ${url}:`, err.message);
-        return undefined;
-      });
-    })
-  )
-  .then((results) => {
-    const merged = results.reduce((acc, data) => {
-      if (!data) {
-        console.warn(`⚠️  Received empty response, skipping`);
-        return acc;
-      }
-      let conversations;
-      if (Array.isArray(data)) {
-        conversations = data;
-      } else if (data.conversations) {
-        conversations = data.conversations;
-      } else {
-        console.warn(`⚠️  Unexpected format, skipping`);
-        conversations = [];
-      }
-      return acc.concat(conversations);
-    }, []);
-
-    console.log(`Fetched ${merged.length} conversations total.`);
-
-    const path = "./res/conversations.json";
-    fs.mkdirSync("./res", { recursive: true });
-    fs.writeFileSync(path, JSON.stringify(merged, null, 2));
-
-    return path;
-  });
-};
-
-fetchAndMerge()
-  .then((path) => {
-    return Import.importFromFile(path);
-  })
+Import.importFromFile("./res/conversations.json")
   .then((result) => {
     console.log(`Import is done. ${result.count} conversations imported.`);
   })

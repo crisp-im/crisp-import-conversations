@@ -7,9 +7,5 @@
   "PLUGIN_NAME": "Crisp Import",
   "DEFAULT_USER_EMAIL": "default_email@acme.com",
   "DEFAULT_USER_NICKNAME": "Acme Inc.",
-  "DEFAULT_OPERATOR_NICKNAME": "John",
-  "GCS_BASE_URL": "",
-  "GCS_JSON_FILES": [
-    ""
-  ]
+  "DEFAULT_OPERATOR_NICKNAME": "John"
 }
