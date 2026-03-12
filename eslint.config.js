@@ -6,6 +6,9 @@ export default defineConfig([
 
   {
     rules: {
+      "no-console": "off",
+
+      "crisp/constructor-variables": "off",
       "crisp/header-check": "off"
     }
   }
